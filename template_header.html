@@ -1,0 +1,41 @@
+<!-- START header chunk-->
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="[[++cultureKey]]"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="[[++cultureKey]]"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="[[++cultureKey]]"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="[[++cultureKey]]"> <!--<![endif]-->
+<head>
+	<base href="[[++site_url]]" />
+	<meta charset="[[++modx_charset:lcase]]" />
+	<meta name="description" content="[[*introtext:empty=`[[*content:strip_tags]]`:limit=`200`]]" />
+	<meta name="author" content="[[*createdby:userinfo=`fullname`]]" />
+	<meta name="keywords" content="" />
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width" />
+	<title>[[*pagetitle]] - [[++site_name]]</title>
+	<!-- Included CSS Files -->
+	<link rel="stylesheet" href="[[++site_url]]assets/templates/foundation_modx/stylesheets/foundation.css">
+	<link rel="stylesheet" href="[[++site_url]]assets/templates/foundation_modx/stylesheets/app.css">
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" href="[[++site_url]]assets/templates/foundation_modx/stylesheets/ie.css">
+	<![endif]-->
+	<!-- IE Fix for HTML5 Tags -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<!-- container -->
+	<div class="container">
+		<header class="row">
+			<div class="four columns">
+				<a href="[[~1]]" title="[[++site_name]]" id="[[++site_name]]_home_link">
+  					<img src="[[++site_url]]assets/templates/foundation_modx/images/logo.png" alt="[[++site_name]] logo">
+				</a>
+			</div>
+			<nav class="eight columns">
+				[[Wayfinder? &startId=`0` ]]
+			</nav>
+		</header>
+<!-- END header chunk-->
