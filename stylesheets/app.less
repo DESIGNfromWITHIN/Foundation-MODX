@@ -1,0 +1,140 @@
+/* Foundation v2.1.5 http://foundation.zurb.com */
+/* Artfully masterminded by ZURB  */
+
+/* -------------------------------------------------- 
+   Table of Contents
+-----------------------------------------------------
+:: LESS Variables
+:: LESS Mixins
+:: Shared Styles
+:: Header
+:: Main
+:: Footer
+*/
+
+/* -----------------------------------------
+   LESS Variables
+----------------------------------------- */
+@text_color: #444444;
+@text_link: #8EAC49;
+@text_hover: #6F8738;
+@text_focus: #000000;
+@header_color: #000000;
+@text_shadow: #ffffff;
+
+/* -----------------------------------------
+   LESS Mixins
+----------------------------------------- */
+.font-size(@font-size: 16) {
+	@rem: (@font-size / 10);
+	font-size: @font-size * 1px;
+	font-size: ~"@{rem}rem";
+}
+.gradient(@color: #F5F5F5, @start: #EEE, @stop: #FFF) {
+	background: @color;
+	background: -webkit-gradient(linear, left bottom, left top, color-stop(0, @start), color-stop(1, @stop));
+	background: -ms-linear-gradient(bottom, @start, @stop);
+	background: -o-linear-gradient(@start, @stop 70%);
+	background: -moz-linear-gradient(center bottom, @start 0%, @stop 100%);
+}
+.rounded(@radius: 3px, @radius2: 3px, @radius3: 3px, @radius4: 3px) {
+	-webkit-border-radius: @radius @radius2 @radius3 @radius4;
+	-moz-border-radius: @radius @radius2 @radius3 @radius4;
+	border-radius: @radius @radius2 @radius3 @radius4;
+	-moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box; 
+}
+.drop-shadow(@x-axis: 0px, @y-axis: 0px, @blur: 6px, @alpha: 0.4) {
+	-webkit-box-shadow: @x-axis @y-axis @blur rgba(0, 0, 0, @alpha);
+	-moz-box-shadow: @x-axis @y-axis @blur rgba(0, 0, 0, @alpha);
+	box-shadow: @x-axis @y-axis @blur rgba(0, 0, 0, @alpha);
+}
+.opacity(@opacity: 0.5) {
+	-moz-opacity: @opacity;
+	-khtml-opacity: @opacity;
+	-webkit-opacity: @opacity;
+	-o-opacity: @opacity;
+	opacity: @opacity;
+}
+.box-shadow(@color1: rgba(255,255,255,0.5)) {
+	-webkit-box-shadow: inset 0 1px 0 @color1;
+	-moz-box-shadow: inset 0 1px 0 @color1;
+	box-shadow: inset 0 1px 0 @color1;
+}
+.text-shadow(@color1: #444444) {
+	text-shadow: 0 1px 0 @color1;
+}
+/* -----------------------------------------
+   Shared Styles
+----------------------------------------- */
+html {
+	overflow-y: scroll;
+}
+body {
+	font-family: 'Open Sans', "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	color: @text_color;
+	text-shadow: @text_shadow 1px 1px 1px;
+	.font-size(16);
+	line-height: 1.5;
+}
+pre, code { 
+	/* www.pathf.com/blogs/2008/05/formatting-quoted-code-in-blog-posts-css21-white-space-pre-wrap/ */
+	white-space: pre; /* CSS2 */
+	white-space: pre-wrap; /* CSS 2.1 */
+	white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
+	word-wrap: break-word; /* IE */
+}
+p {
+	.font-size(16);
+	line-height: 1.5;
+	margin: 0 0 18px;
+}
+a { 
+	color: @text_link;
+	cursor: pointer;
+	display: inline-block;
+}
+a:hover {
+	color: @text_hover;
+}
+a:focus {
+	color: @text_focus;
+}
+h1, h2, h3, h4, h5, h6 {
+	color: @header_color;
+}
+h1 {
+	.font-size(38);
+	margin-bottom: 10px;
+}
+h2 {
+	.font-size(28);
+	margin-bottom: 9px;
+}
+h3 {
+	.font-size(26);
+	margin-bottom: 8px;
+}
+h4 {
+	.font-size(20);
+	margin-bottom: 8px;
+}
+h5 {
+	.font-size(18);
+	margin-bottom: 8px;
+}
+h6 {
+	.font-size(15);
+	margin-bottom: 8px;
+}
+
+/* -----------------------------------------
+   Header
+----------------------------------------- */
+
+/* -----------------------------------------
+   Main
+----------------------------------------- */
+
+/* -----------------------------------------
+   Footer
+----------------------------------------- */
