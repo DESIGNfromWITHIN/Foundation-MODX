@@ -1,5 +1,9 @@
 Changelog for Foundation-MODX
 
+Foundation-MODX-1.0.1 (12 febuary 2013)
+====================================
+- Removed the foundation-3.2.5 root files
+
 Foundation-MODX-1.0.0 (12 febuary 2013)
 ====================================
 - Added changelog
