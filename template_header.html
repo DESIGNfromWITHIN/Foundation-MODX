@@ -11,26 +11,18 @@
 	<meta name="author" content="[[*createdby:userinfo=`fullname`]]" />
 	<meta name="keywords" content="" />
 	<!-- Set the viewport width to device width for mobile -->
-	<meta name="viewport" content="width=device-width" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>[[*pagetitle]] - [[++site_name]]</title>
-	<!-- Included CSS Files -->
-	<link rel="stylesheet" href="[[++site_url]]assets/templates/foundation_modx/stylesheets/foundation.css">
-	<link rel="stylesheet" href="[[++site_url]]assets/templates/foundation_modx/stylesheets/app.css">
-	<!--[if lt IE 9]>
-		<link rel="stylesheet" href="[[++site_url]]assets/templates/foundation_modx/stylesheets/ie.css">
-	<![endif]-->
-	<script src="[[++site_url]]assets/templates/foundation_modx/javascripts/respond.min.js"></script>
-	<!-- IE Fix for HTML5 Tags -->
-	<!--[if lt IE 9]>
-		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
+	<link rel="stylesheet" href="assets/templates/foundation_modx/stylesheets/foundation.css">
+	<link rel="stylesheet" href="assets/templates/foundation_modx/stylesheets/app.css">
+	<script src="assets/templates/foundation_modx/javascripts/modernizr.foundation.js"></script>
 </head>
 <body>
 	<div class="container">
 		<header class="row">
 			<div class="four columns">
-				<a href="[[~1]]" title="[[++site_name]]" id="[[++site_name]]_home_link">
-  					<img src="[[++site_url]]assets/templates/foundation_modx/images/logo.png" alt="[[++site_name]] logo">
+				<a href="[[~1]]" title="[[++site_name]]">
+  					<img src="assets/templates/foundation_modx/images/logo.png" alt="[[++site_name]] logo">
 				</a>
 			</div>
 			<nav class="eight columns">

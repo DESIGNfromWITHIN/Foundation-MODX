@@ -1,0 +1,6 @@
+Changelog for Foundation-MODX
+
+Foundation-MODX-1.0.0 (12 febuary 2013)
+====================================
+- Added changelog
+- Updated version to foundation-3.2.5
