@@ -8,6 +8,13 @@ ABOUT
 This is a very minimal MODX Revolution template, with this template you can quickly install to start using the fantastic Foundation framework.
 
 -----------------------------
+REQUIREMENTS
+-----------------------------
+
+- MODX Revolution 2.2+
+- Wayfinder
+
+-----------------------------
 QUICK-START LIST
 -----------------------------
 
